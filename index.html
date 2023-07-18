@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Quotes App</title>
+</head>
+<body>
+
+    <div class="container mx-auto text-center my-5">
+        <h1 class="fw-bolder display-1 mb-5">Quote of the Day</h1>
+        <p class="lead fs-1 mb-3">Press the button below to recieve a random quote!</p>
+        <button  class="btn btn-outline-dark btn-lg mb-3" onclick="displayNewQuote()">New Quote</button>
+        <div class="qoute">
+            <div class="figure-container">
+                <div id="figure-author"  class="mx-auto figure-author position-relative">
+                    <div id="img">
+                        
+                    </div>
+                    
+                    <div class="position-absolute dark-layer top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center flex-column">
+                        <p id="born" class="text-white"></p>
+                        <p id="die" class="text-white"></p>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <p class="text-success-emphasis fs-1 fw-medium" id="quote"></p>
+            <p class="fw-bold text-success-emphasis" id="author"></p>
+        </div>
+       
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.qoute .figure-container .figure-author{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.qoute .figure-container .figure-author img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.qoute .figure-container:hover .figure-author img{
+    transform: scale(1.1);
+}
+
+
+.qoute .figure-container .dark-layer{
+    background-color: rgba(0, 0, 0, .5);
+    transform: rotateY(90deg);
+    opacity: 0;
+    transition:all 0.5s;
+}
+
+.qoute .figure-container:hover .dark-layer{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
