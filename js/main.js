@@ -26,7 +26,7 @@ quoteList=[
 
 
 function displayNewQuote(){
-    layer.setAttribute("class","position-absolute dark-layer top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center flex-column")
+    layer.setAttribute("class","position-absolute dark-layer top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center flex-column");
 newRandomNumber=Math.floor(Math.random() * 10);
 if((oldRandomNumber !=newRandomNumber)||(oldRandomNumber==undefined)){
     quote.innerHTML=quoteList[newRandomNumber].quoteText;
